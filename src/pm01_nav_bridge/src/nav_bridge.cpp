@@ -30,9 +30,9 @@ public:
     // Provisional Livox position relative to LINK_TORSO_YAW.
     // 0.30 m measured pelvis-to-Livox height
     // minus the URDF's 0.0809 m torso-joint height.
-    mount_x_ = this->declare_parameter<double>("mount_x", 0.0);
+    mount_x_ = this->declare_parameter<double>("mount_x", 0.12438064);
     mount_y_ = this->declare_parameter<double>("mount_y", 0.0);
-    mount_z_ = this->declare_parameter<double>("mount_z", 0.2191);
+    mount_z_ = this->declare_parameter<double>("mount_z", 0.2128948);
 
     nav_odom_pub_ =
       this->create_publisher<nav_msgs::msg::Odometry>(
