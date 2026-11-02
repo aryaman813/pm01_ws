@@ -143,7 +143,6 @@ private:
 
     geometry_msgs::msg::TransformStamped waist_tf;
 
-
     try
     {
       // Use the waist angle at the FAST-LIO pose timestamp.
@@ -258,6 +257,7 @@ private:
 
   rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr
     nav_odom_pub_;
+
 };
 
 int main(int argc, char ** argv)

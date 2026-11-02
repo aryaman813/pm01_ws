@@ -75,7 +75,7 @@ public:
         //
         // Match that reliability setting for the input.
         auto input_qos =
-            rclcpp::QoS(rclcpp::KeepLast(256)).reliable();
+            rclcpp::QoS(rclcpp::KeepLast(256)).best_effort();
 
         subscription_ = create_subscription<PointCloud2>(
             "/livox/lidar",
