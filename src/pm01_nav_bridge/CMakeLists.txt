@@ -40,6 +40,9 @@ ament_target_dependencies(nav_bridge
 install(TARGETS nav_bridge
   DESTINATION lib/${PROJECT_NAME}
 )
+install(PROGRAMS scripts/odom_publisher_node.py
+  DESTINATION lib/${PROJECT_NAME}
+)
 install(DIRECTORY launch
   DESTINATION share/${PROJECT_NAME}
 )

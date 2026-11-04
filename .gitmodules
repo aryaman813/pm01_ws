@@ -1,0 +1,4 @@
+[submodule "src/pm01_mapping/FAST_LIO"]
+	path = src/pm01_mapping/FAST_LIO
+	url = https://github.com/PiusLim373/FAST_LIO.git
+	branch = pm01
